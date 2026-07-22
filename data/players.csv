@@ -1,0 +1,69 @@
+id,name,position,league,team_id,goals,assists,appearances,player_rating
+1,Lucy Kisaga Agisa,Goalkeeper,premier,3,0,0,18,7.2
+2,Wilfrida Ouko Seda,Goalkeeper,premier,3,0,0,15,7.0
+3,Vivian Shiyonzo Khayati,Midfielder,premier,3,3,5,19,7.5
+4,Yvonne Kavere Idagiza,Defender,premier,3,1,2,20,7.1
+5,Lilian Mmboga,Defender,premier,3,0,1,17,6.8
+6,Pauline Ochieng,Midfielder,premier,3,2,3,18,7.0
+7,Monica Nakamu,Forward,premier,3,7,2,19,7.8
+8,Cynthia Atieno,Forward,premier,3,5,4,18,7.4
+9,Maximilla Robi Muniko,Defender,premier,3,0,0,14,6.9
+10,Anna Arusi,Defender,premier,3,0,1,16,6.7
+11,Grace Wekesa,Forward,premier,3,4,3,17,7.2
+12,Eugene Linda,Defender,premier,3,0,0,12,6.5
+13,Esse Akida,Defender,premier,3,1,0,15,6.8
+14,Janet Mumo,Defender,premier,3,0,0,13,6.6
+15,Mildred Kanyisi Ayoma,Forward,premier,3,2,1,14,6.9
+16,Amina Nyakoa,Forward,premier,3,3,2,15,7.1
+17,Swaum Masungo Nanjala,Forward,premier,3,1,0,11,6.5
+18,Dorcas Neema,Forward,premier,3,0,0,9,6.3
+19,Fanis Kwamboka,Forward,premier,3,2,1,12,6.8
+20,Mary Majeso,Midfielder,premier,3,1,3,16,7.0
+21,Nelly Kache,Midfielder,premier,3,0,2,14,6.7
+22,Anney Matinde,Defender,premier,3,0,0,10,6.4
+23,Christine Adhiambo,Midfielder,premier,3,0,1,11,6.5
+24,Lilyann Adhiambo,Forward,premier,3,0,0,8,6.2
+25,Ruth Kurgat Chebungei,Defender,premier,3,0,0,7,6.3
+26,Naomi Ongachi Lumadede,Midfielder,premier,3,0,0,6,6.1
+27,Sarah Chalovu,Forward,premier,3,0,0,5,6.0
+28,Pauline Kathuruh,Goalkeeper,premier,6,0,0,0,0
+29,Fidy Njoki,Defender,premier,6,0,0,0,0
+30,Lavyne Achola,Defender,premier,6,0,0,0,0
+31,Foscah Kanenge,Defender,premier,6,0,0,0,0
+32,Hellen Ochieng,Defender,premier,6,0,0,0,0
+33,Mercy Manguro,Midfielder,premier,6,0,0,0,0
+34,Eunice Wabwoba,Midfielder,premier,6,0,0,0,0
+35,Drailer Salome,Midfielder,premier,6,0,0,0,0
+36,Nuru Hadima,Midfielder,premier,6,0,0,0,0
+37,Euphrasier Shilwatso,Midfielder,premier,6,0,0,0,0
+38,Magneta Ocharo,Forward,premier,6,0,0,0,0
+39,Lindah Kihara,Forward,premier,6,8,1,20,7.5
+40,Valerian Nabwire Echakut,Forward,premier,6,0,0,0,0
+41,Praxidies Shivikhwa,Forward,premier,6,0,0,0,0
+42,Fridah Parloma,Forward,premier,6,0,0,0,0
+43,Faith Naliaka,Forward,premier,6,0,0,0,0
+44,Esther Ngugi,Forward,premier,6,0,0,0,0
+45,Velma Auma,Goalkeeper,premier,2,0,0,0,0
+46,Judith Osimno,Goalkeeper,premier,2,0,0,0,0
+47,Maureen Shimulu,Goalkeeper,premier,2,0,0,0,0
+48,Lavender Abong'o,Goalkeeper,premier,2,0,0,0,0
+49,Diana Shakava,Defender,premier,2,0,0,0,0
+50,Christine Nakale,Defender,premier,2,0,0,0,0
+51,Emmaculate Wangira,Defender,premier,2,0,0,0,0
+52,Margaret Odiro,Defender,premier,2,0,0,0,0
+53,Sophy Adhiambo,Defender,premier,2,0,0,0,0
+54,Dorcal Glender,Defender,premier,2,0,0,0,0
+55,Lorine Ilavonga,Defender,premier,2,0,0,0,0
+56,Everline Juma,Midfielder,premier,2,0,0,0,0
+57,Charity Lukhavi,Midfielder,premier,2,0,0,0,0
+58,Lilian Ngina,Midfielder,premier,2,0,0,0,0
+59,Linda Okoside,Midfielder,premier,2,0,0,0,0
+60,Lucy Nato,Midfielder,premier,2,0,0,0,0
+61,Sylvia Mukai,Midfielder,premier,2,0,0,0,0
+62,Beverline Akida,Midfielder,premier,2,0,0,0,0
+63,Mercy Airo,Forward,premier,2,0,0,0,0
+64,Elizabeth Mideva,Striker,premier,2,0,0,0,0
+65,Sharline Nambengele,Forward,premier,2,0,0,0,0
+66,Silya Rasoha,Forward,premier,2,0,0,0,0
+67,Quinter Adhiambo,Forward,premier,2,0,0,0,0
+68,Margaret Muchera,Forward,premier,2,0,0,0,0

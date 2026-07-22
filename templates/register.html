@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; padding: 40px; }
+        h1 { color: #f97316; }
+        input { padding: 10px; margin: 10px 0; width: 300px; background: #1f2937; border: 1px solid #f97316; color: #fff; }
+        button { padding: 10px 30px; background: #f97316; border: none; color: #0a0a0a; font-weight: bold; cursor: pointer; }
+        a { color: #f97316; }
+    </style>
+</head>
+<body>
+    <h1>Register</h1>
+    {% if error %}<p style="color: red;">{{ error }}</p>{% endif %}
+    <form method="POST">
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Create Account</button>
+    </form>
+    <p><a href="/login">Already have an account? Login</a></p>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameOn Collective | Kenya Women's Football</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#fff}
+        .hero{position:relative;height:80vh;min-height:550px;background-image:url('https://images.unsplash.com/photo-1522778119023-d9f4f7c9e1b4?q=80&w=2070&auto=format');background-size:cover;background-position:center 40%;display:flex;align-items:center;justify-content:center;text-align:center}
+        .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgba(0,0,0,0.85),rgba(0,0,0,0.6),rgba(0,0,0,0.85))}
+        .hero-content{position:relative;z-index:2;max-width:900px;padding:20px}
+        .hero-badge{font-size:0.8rem;letter-spacing:4px;color:#f97316;margin-bottom:20px;text-transform:uppercase;font-weight:600}
+        h1{font-family:'Anton',sans-serif;font-size:5rem;letter-spacing:3px;color:#fff;margin-bottom:20px;text-transform:uppercase}
+        .hero-tagline{font-size:1.1rem;color:#e5e7eb;margin-bottom:30px}
+        .hero-hashtags{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+        .hashtag{background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.5);padding:8px 20px;border-radius:50px;font-size:0.8rem;font-weight:600;color:#f97316}
+        .search-section{background:#0d1117;padding:30px 20px;border-bottom:1px solid #1f2937}
+        .search-container{max-width:600px;margin:0 auto}
+        .search-wrapper{display:flex;gap:10px}
+        .search-input{flex:1;padding:14px 20px;background:#1f2937;border:1px solid #f97316;border-radius:12px;color:#fff;font-family:'Poppins',sans-serif;font-size:0.9rem}
+        .search-input:focus{outline:none;border-color:#f97316;box-shadow:0 0 10px rgba(249,115,22,0.3)}
+        .search-btn{background:#f97316;border:none;padding:14px 28px;border-radius:12px;color:#0a0a0a;font-weight:600;cursor:pointer}
+        .search-btn:hover{background:#ea580c}
+        .search-results{margin-top:20px;max-height:400px;overflow-y:auto}
+        .search-result-card{background:#1f2937;border-radius:12px;padding:15px;margin-bottom:10px;border-left:4px solid #f97316;cursor:pointer}
+        .search-result-card:hover{transform:translateX(5px)}
+        .search-result-type{font-size:0.65rem;color:#f97316;text-transform:uppercase;margin-bottom:5px}
+        .search-result-name{font-family:'Anton',sans-serif;font-size:1.1rem;color:#fff}
+        .search-result-detail{font-size:0.75rem;color:#9ca3af;margin-top:5px}
+        .nav-bar{background:#0d1117;border-bottom:1px solid #1f2937;position:sticky;top:0;z-index:100}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .tabs{display:flex;justify-content:center;gap:5px;flex-wrap:wrap}
+        .tab-btn{background:transparent;border:none;padding:16px 28px;font-family:'Anton',sans-serif;font-size:1.1rem;letter-spacing:1px;color:#9ca3af;cursor:pointer}
+        .tab-btn:hover{color:#f97316}
+        .tab-btn.active{color:#f97316;border-bottom:3px solid #f97316}
+        .main-content{max-width:1200px;margin:0 auto;padding:40px 20px}
+        .tab-panel{display:none;animation:fadeIn 0.3s}
+        .tab-panel.active{display:block}
+        @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+        .section-title{font-family:'Anton',sans-serif;font-size:1.8rem;color:#f97316;margin:30px 0 20px 0}
+        .league-divider{margin:40px 0 20px 0;padding-bottom:10px;border-bottom:2px solid #f97316;display:flex;align-items:center;gap:15px}
+        .league-divider h2{font-family:'Anton',sans-serif;font-size:1.5rem;color:#f97316}
+        .league-divider span{background:#f97316;color:#0a0a0a;padding:4px 12px;border-radius:20px;font-size:0.7rem;font-weight:600}
+        .teams-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+        .club-card{background:#1f2937;border-radius:16px;padding:20px;transition:all 0.3s;position:relative;overflow:hidden;border:1px solid rgba(249,115,22,0.1)}
+        .club-card:hover{transform:translateY(-5px);border-color:#f97316;box-shadow:0 10px 30px rgba(249,115,22,0.1)}
+        .club-rank{font-family:'Anton',sans-serif;font-size:1.8rem;color:#f97316;opacity:0.15;position:absolute;top:10px;right:16px}
+        .club-logo{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#f97316,#ea580c);display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:1rem;color:#fff;flex-shrink:0}
+        .club-logo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+        .club-name{font-family:'Anton',sans-serif;font-size:1.2rem;color:#fff}
+        .club-city{font-size:0.75rem;color:#6b7280;margin-bottom:16px}
+        .profile-btn{display:block;text-align:center;background:transparent;border:1px solid #f97316;color:#f97316;padding:8px;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.7rem;transition:all 0.3s}
+        .profile-btn:hover{background:#f97316;color:#0a0a0a}
+        .featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:25px;margin-bottom:40px}
+        .featured-card{background:linear-gradient(135deg,#1f2937,#16213e);border-radius:20px;overflow:hidden;transition:transform 0.3s;border:1px solid rgba(249,115,22,0.3);cursor:pointer}
+        .featured-card:hover{transform:translateY(-8px);border-color:#f97316}
+        .featured-image{width:100%;height:250px;background:linear-gradient(135deg,#f97316,#ea580c);display:flex;align-items:center;justify-content:center;font-size:4rem;font-weight:bold;color:#fff;font-family:'Anton',sans-serif}
+        .featured-info{padding:20px}
+        .featured-name{font-family:'Anton',sans-serif;font-size:1.4rem;color:#fff;margin-bottom:5px}
+        .featured-team{font-size:0.75rem;color:#f97316;font-weight:600;margin-bottom:15px}
+        .featured-stats{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+        .goals-badge{background:#f97316;padding:5px 15px;border-radius:30px;font-size:1.2rem;font-weight:700;color:#0a0a0a;font-family:'Anton',sans-serif}
+        .featured-position{background:rgba(249,115,22,0.2);padding:5px 12px;border-radius:20px;font-size:0.7rem;color:#f97316}
+        .view-profile-btn{width:100%;background:transparent;border:1px solid #f97316;color:#f97316;padding:10px;border-radius:10px;cursor:pointer;font-weight:600;font-size:0.75rem;margin-top:10px}
+        .view-profile-btn:hover{background:#f97316;color:#0a0a0a}
+        .players-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+        .player-card{background:#1f2937;border-radius:16px;padding:20px;transition:transform 0.2s;cursor:pointer}
+        .player-card:hover{transform:translateY(-5px)}
+        .player-name{font-family:'Anton',sans-serif;font-size:1.2rem;color:#fff;margin-bottom:5px}
+        .player-team{font-size:0.7rem;color:#f97316;margin-bottom:10px}
+        .player-position{background:#f97316;padding:4px 12px;border-radius:20px;font-size:0.65rem;font-weight:600;color:#0a0a0a;display:inline-block}
+        .standings-table{width:100%;background:#1f2937;border-radius:12px;overflow-x:auto;margin-bottom:30px}
+        .standings-table table{width:100%;border-collapse:collapse;min-width:600px}
+        .standings-table th,.standings-table td{padding:12px 15px;text-align:left;border-bottom:1px solid #374151}
+        .standings-table th{background:#f97316;color:#0a0a0a;font-weight:700;font-size:0.8rem}
+        .comparison-container{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px}
+        .comparison-select{background:#1f2937;border-radius:16px;padding:20px}
+        .comparison-select label{color:#f97316;display:block;margin-bottom:10px;font-weight:600}
+        .comparison-select select{width:100%;padding:12px;background:#0a0a0a;border:1px solid #f97316;border-radius:8px;color:#fff}
+        .compare-btn{background:#f97316;color:#0a0a0a;border:none;padding:14px 32px;border-radius:8px;font-weight:700;cursor:pointer;margin-bottom:30px;width:100%;max-width:200px;display:block;margin-left:auto;margin-right:auto}
+        .compare-btn:hover{background:#ea580c}
+        .comparison-results{display:none;background:#1f2937;border-radius:16px;padding:30px;margin-top:20px}
+        .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+        .comparison-player{text-align:center}
+        .comparison-player h3{color:#f97316;font-family:'Anton',sans-serif;font-size:1.5rem;margin-bottom:15px}
+        .comparison-stat{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #374151}
+        .comparison-stat-value{color:#f97316;font-weight:bold}
+        .scout-score-box{background:linear-gradient(135deg,#f97316,#ea580c);border-radius:12px;padding:15px;text-align:center;margin:15px 0}
+        .scout-score-label{font-size:0.7rem;opacity:0.9}
+        .scout-score-value{font-size:2rem;font-weight:bold}
+        .scout-score-tag{font-weight:bold}
+        .scout-recommendation{font-size:0.7rem;margin-top:10px}
+        footer{text-align:center;margin-top:60px;padding:30px;border-top:1px solid #1f2937;color:#6b7280;font-size:0.7rem}
+        .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;justify-content:center;align-items:center}
+        .modal-content{background:#1f2937;border-radius:24px;max-width:500px;width:90%;padding:30px;position:relative;border:1px solid #f97316;max-height:90vh;overflow-y:auto}
+        .modal-close{position:absolute;top:15px;right:20px;font-size:1.8rem;cursor:pointer;color:#9ca3af}
+        .modal-close:hover{color:#f97316}
+        .modal-player-name{font-family:'Anton',sans-serif;font-size:1.8rem;color:#f97316;margin-bottom:5px}
+        .modal-player-team{color:#9ca3af;font-size:0.85rem;margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #374151}
+        .modal-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin:20px 0}
+        .modal-stat{background:#0a0a0a;padding:15px;border-radius:12px;text-align:center}
+        .modal-stat-value{font-family:'Anton',sans-serif;font-size:1.5rem;color:#f97316}
+        .modal-stat-label{font-size:0.65rem;color:#9ca3af;margin-top:5px}
+        .modal-gps{background:#0a0a0a;padding:15px;border-radius:12px;margin:15px 0}
+        .modal-gps-title{font-size:0.8rem;color:#f97316;margin-bottom:10px}
+        .modal-gps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+        .modal-gps-item{text-align:center}
+        .modal-gps-value{font-weight:bold;color:#fff}
+        .modal-gps-label{font-size:0.6rem;color:#6b7280}
+        .modal-premium{background:linear-gradient(135deg,#f97316,#ea580c);padding:15px;border-radius:12px;text-align:center;margin-top:20px}
+        .modal-premium a{color:#fff;font-weight:bold;text-decoration:none}
+        .most-clicked-section{margin:40px 0}
+        .most-clicked-title{font-family:'Anton',sans-serif;font-size:1.6rem;color:#f97316;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+        .most-clicked-title .line{flex:1;height:2px;background:linear-gradient(to right,#f97316,transparent);max-width:80px}
+        .most-clicked-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:15px}
+        .most-clicked-card{background:#1f2937;border-radius:12px;padding:20px 16px;text-align:center;border:1px solid rgba(249,115,22,0.12);transition:all 0.3s;position:relative;overflow:hidden}
+        .most-clicked-card:hover{transform:translateY(-5px);border-color:#f97316}
+        .most-clicked-rank{font-family:'Anton',sans-serif;font-size:2rem;color:#f97316;opacity:0.2;position:absolute;top:6px;right:12px}
+        .most-clicked-emoji{font-size:1.8rem;display:block;margin-bottom:4px}
+        .most-clicked-name{font-family:'Anton',sans-serif;font-size:1rem;color:#fff;margin-top:4px}
+        .most-clicked-city{font-size:0.65rem;color:#6b7280;margin-bottom:12px}
+        .most-clicked-btn{background:transparent;border:1px solid #f97316;color:#f97316;padding:5px 16px;border-radius:20px;font-size:0.65rem;cursor:pointer;transition:all 0.3s;text-decoration:none;display:inline-block}
+        .most-clicked-btn:hover{background:#f97316;color:#0a0a0a}
+        .club-flex{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+        @media (max-width:768px){h1{font-size:2.5rem}.hero{height:70vh}.tab-btn{padding:12px 16px;font-size:0.9rem}.comparison-container{grid-template-columns:1fr;gap:20px}.comparison-grid{grid-template-columns:1fr;gap:30px}}
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">GAMEON COLLECTIVE</div>
+            <h1>KENYA WOMEN'S<br>FOOTBALL INTELLIGENCE</h1>
+            <div class="hero-tagline">Tracking performance. Telling stories. Building legacies.</div>
+            <div class="hero-hashtags">
+                <span class="hashtag">#GameOnCollective</span>
+                <span class="hashtag">#KenyaWomenFootball</span>
+                <span class="hashtag">#FutureStars</span>
+            </div>
+        </div>
+    </div>
+    <div class="search-section">
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="globalSearchInput" class="search-input" placeholder="🔍 Search teams, players, or cities...">
+                <button id="globalSearchButton" class="search-btn">Search</button>
+            </div>
+            <div id="globalSearchResults" class="search-results"></div>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="teams">🏆 TEAMS</button>
+                <button class="tab-btn" data-tab="players">⭐ PLAYERS</button>
+                <button class="tab-btn" data-tab="standings">📊 STANDINGS</button>
+                <button class="tab-btn" data-tab="gps">📍 GPS TRACKING</button>
+                <button class="tab-btn" data-tab="comparison">⚖️ COMPARE</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="teams" class="tab-panel active"><div id="teams-container"></div></div>
+        <div id="players" class="tab-panel">
+            <div class="section-title">⭐ FEATURED PLAYERS — TOP SCORERS 2025/26</div>
+            <div id="featured-players" class="featured-grid"></div>
+            <div class="section-title">📋 ALL PLAYERS</div>
+            <div id="all-players" class="players-grid"></div>
+        </div>
+        <div id="standings" class="tab-panel">
+            <div class="section-title">🏆 LEAGUE STANDINGS</div>
+            <div id="standings-container"></div>
+        </div>
+        <div id="gps" class="tab-panel">
+            <div class="section-title">📍 GPS TRACKING — LIVE DATA</div>
+            <div id="gps-status" style="background:#1f2937;border-radius:16px;padding:20px;margin-bottom:30px"></div>
+            <div class="section-title">🏃‍♀️ PLAYERS WITH GPS VESTS</div>
+            <div id="gps-players" class="teams-grid"></div>
+        </div>
+        <div id="comparison" class="tab-panel">
+            <div class="section-title">⚖️ COMPARE PLAYERS</div>
+            <div class="comparison-container">
+                <div class="comparison-select"><label>SELECT PLAYER 1</label><select id="player1Select"><option value="">-- Select Player --</option></select></div>
+                <div class="comparison-select"><label>SELECT PLAYER 2</label><select id="player2Select"><option value="">-- Select Player --</option></select></div>
+            </div>
+            <button id="compareBtn" class="compare-btn">COMPARE →</button>
+            <div id="comparisonResults" class="comparison-results"></div>
+        </div>
+    </div>
+    <footer><p>GameOn Collective | <a href="/subscribe" style="color:#f97316;">Upgrade to Premium</a> for full player profiles, GPS data, and scouting reports</p></footer>
+    <div id="playerModal" class="modal"><div class="modal-content"><span class="modal-close" onclick="closeModal()">&times;</span><div id="modal-content"></div></div></div>
+    <script>
+    const API_URL = 'http://127.0.0.1:5002';
+
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.tab-btn').forEach(function(b) {
+                b.classList.remove('active');
+            });
+            btn.classList.add('active');
+            document.querySelectorAll('.tab-panel').forEach(function(p) {
+                p.classList.remove('active');
+            });
+            document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+    });
+
+    // Global Search
+    var globalSearchInput = document.getElementById('globalSearchInput');
+    var globalSearchButton = document.getElementById('globalSearchButton');
+    var globalSearchResults = document.getElementById('globalSearchResults');
+
+    async function globalSearch() {
+        var q = globalSearchInput.value.trim();
+        if (!q) {
+            globalSearchResults.innerHTML = '<div style="text-align:center;padding:20px;color:#9ca3af;">Type something to search...</div>';
+            return;
+        }
+        globalSearchResults.innerHTML = '<div style="text-align:center;padding:20px;color:#f97316;">🔍 Searching...</div>';
+        try {
+            var r = await fetch(API_URL + '/api/search?q=' + encodeURIComponent(q));
+            var d = await r.json();
+            if (d.results && d.results.length > 0) {
+                globalSearchResults.innerHTML = d.results.map(function(r) {
+                    var detail = '';
+                    if (r.type === 'team') {
+                        detail = r.city + ' • ' + r.league;
+                    } else if (r.type === 'player') {
+                        detail = r.position;
+                    }
+                    return '<div class="search-result-card" onclick="if(r.type===\'player\') openModal(' + r.id + ')"><div class="search-result-type">' + r.type.toUpperCase() + '</div><div class="search-result-name">' + r.name + '</div><div class="search-result-detail">' + detail + '</div></div>';
+                }).join('');
+            } else {
+                globalSearchResults.innerHTML = '<div style="text-align:center;padding:20px;color:#9ca3af;">No results found</div>';
+            }
+        } catch (e) {
+            globalSearchResults.innerHTML = '<div style="text-align:center;padding:20px;color:#f97316;">⚠️ Search error</div>';
+        }
+    }
+
+    globalSearchButton.addEventListener('click', globalSearch);
+    globalSearchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') globalSearch();
+    });
+
+    function getTeamName(t) {
+        if (t === 3) return 'Kibera Women';
+        if (t === 6) return 'Kayole Starlets';
+        return 'Unknown Team';
+    }
+
+    function openModal(id) {
+        var modal = document.getElementById('playerModal');
+        var content = document.getElementById('modal-content');
+        modal.style.display = 'flex';
+        content.innerHTML = '<div style="text-align:center;padding:40px;">Loading...</div>';
+        fetch(API_URL + '/api/player/' + id)
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                var p = data.player;
+                var g = data.gps;
+                var team = data.team;
+                if (p) {
+                    content.innerHTML = '<div class="modal-player-name">' + p.name + '</div><div class="modal-player-team">' + (team ? team.name : 'Unknown') + ' • ' + p.position + '</div><div class="modal-stats"><div class="modal-stat"><div class="modal-stat-value">' + (p.goals || 0) + '</div><div class="modal-stat-label">GOALS</div></div><div class="modal-stat"><div class="modal-stat-value">' + (p.assists || 0) + '</div><div class="modal-stat-label">ASSISTS</div></div><div class="modal-stat"><div class="modal-stat-value">' + (p.appearances || 0) + '</div><div class="modal-stat-label">APPS</div></div><div class="modal-stat"><div class="modal-stat-value">' + (p.player_rating || '--') + '</div><div class="modal-stat-label">RATING</div></div></div>' + (g ? '<div class="modal-gps"><div class="modal-gps-title">🏃‍♀️ GPS METRICS</div><div class="modal-gps-grid"><div class="modal-gps-item"><div class="modal-gps-value">' + g.total_distance_km + ' km</div><div class="modal-gps-label">DISTANCE</div></div><div class="modal-gps-item"><div class="modal-gps-value">' + g.max_speed_kmh + ' km/h</div><div class="modal-gps-label">TOP SPEED</div></div><div class="modal-gps-item"><div class="modal-gps-value">' + g.sprints + '</div><div class="modal-gps-label">SPRINTS</div></div></div></div>' : '') + '<div class="modal-premium">🔒 <a href="/subscribe">Upgrade to Pro</a> for full report</div>';
+                }
+            })
+            .catch(function(e) {
+                content.innerHTML = '<div style="text-align:center;padding:40px;color:#f97316;">Error loading player</div>';
+            });
+    }
+
+    function closeModal() {
+        document.getElementById('playerModal').style.display = 'none';
+    }
+
+    window.onclick = function(e) {
+        var m = document.getElementById('playerModal');
+        if (e.target === m) m.style.display = 'none';
+    };
+
+    async function loadGPSData() {
+        try {
+            var s = await fetch(API_URL + '/api/gps/status').then(function(r) { return r.json(); });
+            var p = await fetch(API_URL + '/api/gps/players').then(function(r) { return r.json(); });
+            var g = await fetch(API_URL + '/api/gps/data').then(function(r) { return r.json(); });
+            document.getElementById('gps-status').innerHTML = '<div style="display:flex;justify-content:space-between;"><div><div style="color:#f97316;">GPS STATUS</div><div style="font-size:1.5rem;">' + s.status + '</div><div>' + s.message + '</div></div><div style="display:flex;gap:30px;"><div><span style="font-size:2rem;color:#f97316;">' + s.total_vests + '</span><br>VESTS</div><div><span style="font-size:2rem;color:#f97316;">' + s.total_players + '</span><br>PLAYERS</div></div></div>';
+            document.getElementById('gps-players').innerHTML = p.map(function(player) {
+                var metric = g.find(function(item) { return item.player_id === player.player_id; });
+                return '<div class="club-card" onclick="openModal(' + player.player_id + ')"><div class="club-name">' + player.player_name + '</div><div class="club-position">' + player.position + '</div><span style="background:#f97316;padding:4px 12px;border-radius:20px;">Vest #' + player.vest_number + '</span>' + (metric ? '<div style="margin-top:15px;"><div>📊 ' + metric.total_distance_km + ' km ⚡ ' + metric.max_speed_kmh + ' km/h</div><div>🏃 ' + metric.sprints + ' sprints ❤️ ' + metric.avg_heart_rate + ' bpm</div></div>' : '<div style="margin-top:15px;">GPS data coming soon</div>') + '</div>';
+            }).join('');
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    async function loadComparisonPlayers() {
+        try {
+            var r = await fetch(API_URL + '/api/players');
+            var data = await r.json();
+            var p1 = document.getElementById('player1Select');
+            var p2 = document.getElementById('player2Select');
+            p1.innerHTML = '<option value="">-- Select Player --</option>';
+            p2.innerHTML = '<option value="">-- Select Player --</option>';
+            data.forEach(function(p) {
+                p1.appendChild(new Option(p.name + ' (' + p.position + ')', p.id));
+                p2.appendChild(new Option(p.name + ' (' + p.position + ')', p.id));
+            });
+        } catch (e) {
+            console.error('Error loading players for comparison:', e);
+        }
+    }
+
+    document.getElementById('compareBtn').addEventListener('click', async function() {
+        var id1 = document.getElementById('player1Select').value;
+        var id2 = document.getElementById('player2Select').value;
+        if (!id1 || !id2) {
+            alert('Please select both players');
+            return;
+        }
+        var resDiv = document.getElementById('comparisonResults');
+        resDiv.style.display = 'block';
+        resDiv.innerHTML = '<div style="text-align:center;padding:40px;color:#f97316;">Loading comparison...</div>';
+        try {
+            var r = await fetch(API_URL + '/api/compare?player1=' + id1 + '&player2=' + id2);
+            var data = await r.json();
+            if (!data.comparison) {
+                resDiv.innerHTML = '<div style="text-align:center;padding:40px;color:#f97316;">No comparison data available</div>';
+                return;
+            }
+            var p1 = data.comparison.player1;
+            var p2 = data.comparison.player2;
+            resDiv.innerHTML = '<div class="comparison-grid"><div class="comparison-player"><h3>' + p1.name + '</h3><p>' + p1.position + ' • ' + p1.team + '</p><div class="comparison-stat"><span>Goals</span><span class="comparison-stat-value">' + (p1.goals || 0) + '</span></div><div class="comparison-stat"><span>Assists</span><span class="comparison-stat-value">' + (p1.assists || 0) + '</span></div><div class="comparison-stat"><span>Appearances</span><span>' + (p1.appearances || 0) + '</span></div><div class="comparison-stat"><span>Rating</span><span class="comparison-stat-value">' + (p1.rating || '--') + '</span></div><div class="comparison-stat"><span>Top Speed</span><span class="comparison-stat-value">' + (p1.top_speed || '--') + ' km/h</span></div></div><div class="comparison-player"><h3>' + p2.name + '</h3><p>' + p2.position + ' • ' + p2.team + '</p><div class="comparison-stat"><span>Goals</span><span class="comparison-stat-value">' + (p2.goals || 0) + '</span></div><div class="comparison-stat"><span>Assists</span><span class="comparison-stat-value">' + (p2.assists || 0) + '</span></div><div class="comparison-stat"><span>Appearances</span><span>' + (p2.appearances || 0) + '</span></div><div class="comparison-stat"><span>Rating</span><span class="comparison-stat-value">' + (p2.rating || '--') + '</span></div><div class="comparison-stat"><span>Top Speed</span><span class="comparison-stat-value">' + (p2.top_speed || '--') + ' km/h</span></div></div></div><div style="text-align:center;margin-top:20px;padding-top:20px;border-top:1px solid #374151;"><a href="/subscribe" style="color:#f97316;font-weight:bold;">🔒 Upgrade to Pro for advanced comparison</a></div>';
+        } catch (e) {
+            console.error('Comparison error:', e);
+            resDiv.innerHTML = '<div style="text-align:center;padding:40px;color:#f97316;">Error loading comparison</div>';
+        }
+    });
+
+    async function loadAllData() {
+        try {
+            var premier = await fetch(API_URL + '/api/premier/teams').then(function(r) { return r.json(); });
+            var nsl = await fetch(API_URL + '/api/nsl/teams').then(function(r) { return r.json(); });
+            var zoneA = await fetch(API_URL + '/api/division-one/zone-a/teams').then(function(r) { return r.json(); });
+            var zoneB = await fetch(API_URL + '/api/division-one/zone-b/teams').then(function(r) { return r.json(); });
+            var players = await fetch(API_URL + '/api/players').then(function(r) { return r.json(); });
+            var featuredPlayers = await fetch(API_URL + '/api/featured-players').then(function(r) { return r.json(); });
+            var premierStandings = await fetch(API_URL + '/api/premier/standings').then(function(r) { return r.json(); });
+            var nslStandings = await fetch(API_URL + '/api/nsl/standings').then(function(r) { return r.json(); });
+
+            var mostClicked = premier.slice(0, 6);
+
+            var teamsHTML = '';
+
+            // Most Clicked Section
+            teamsHTML += '<div class="most-clicked-section">';
+            teamsHTML += '<div class="most-clicked-title">🔥 MOST VIEWED CLUBS <span class="line"></span></div>';
+            teamsHTML += '<div class="most-clicked-grid">';
+            mostClicked.forEach(function(t, i) {
+                var emoji = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '⚽';
+                teamsHTML += '<div class="most-clicked-card">';
+                teamsHTML += '<span class="most-clicked-rank">' + String(i + 1).padStart(2, '0') + '</span>';
+                teamsHTML += '<span class="most-clicked-emoji">' + emoji + '</span>';
+                teamsHTML += '<div class="most-clicked-name">' + t.name + '</div>';
+                teamsHTML += '<div class="most-clicked-city">📍 ' + t.city + '</div>';
+                teamsHTML += '<a href="/team/' + t.id + '" class="most-clicked-btn">TO PROFILE →</a>';
+                teamsHTML += '</div>';
+            });
+            teamsHTML += '</div></div>';
+
+            // Premier League
+            teamsHTML += '<div class="league-divider"><h2>🏆 PREMIER LEAGUE</h2><span>' + premier.length + '</span></div>';
+            teamsHTML += '<div class="teams-grid" id="premier-grid"></div>';
+
+            // NSL
+            teamsHTML += '<div class="league-divider"><h2>🌟 NATIONAL SUPER LEAGUE</h2><span>' + nsl.length + '</span></div>';
+            teamsHTML += '<div class="teams-grid" id="nsl-grid"></div>';
+
+            // Division One
+            teamsHTML += '<div class="league-divider"><h2>📍 DIVISION ONE</h2><span>' + (zoneA.length + zoneB.length) + '</span></div>';
+            teamsHTML += '<div class="teams-grid" id="div1-grid"></div>';
+
+            document.getElementById('teams-container').innerHTML = teamsHTML;
+
+            // Premier League Teams
+            document.getElementById('premier-grid').innerHTML = premier.map(function(t, index) {
+                return '<div class="club-card"><span class="club-rank">' + String(index + 1).padStart(2, '0') + '</span><div class="club-flex"><div class="club-logo">' + (t.logo ? '<img src="' + t.logo + '" alt="' + t.name + '">' : t.name[0]) + '</div><div class="club-name">' + t.name + '</div></div><div class="club-city">📍 ' + t.city + '</div><a href="/team/' + t.id + '" class="profile-btn">TO THE PROFILE →</a></div>';
+            }).join('');
+
+            // NSL Teams
+            document.getElementById('nsl-grid').innerHTML = nsl.map(function(t, index) {
+                return '<div class="club-card"><span class="club-rank">' + String(index + 1).padStart(2, '0') + '</span><div class="club-flex"><div class="club-logo">' + (t.logo ? '<img src="' + t.logo + '" alt="' + t.name + '">' : t.name[0]) + '</div><div class="club-name">' + t.name + '</div></div><div class="club-city">📍 ' + t.city + '</div><a href="/team/' + t.id + '" class="profile-btn">TO THE PROFILE →</a></div>';
+            }).join('');
+
+            // Division One Teams
+            var div1Teams = zoneA.concat(zoneB);
+            document.getElementById('div1-grid').innerHTML = div1Teams.map(function(t, index) {
+                return '<div class="club-card"><span class="club-rank">' + String(index + 1).padStart(2, '0') + '</span><div class="club-flex"><div class="club-logo">' + (t.logo ? '<img src="' + t.logo + '" alt="' + t.name + '">' : t.name[0]) + '</div><div class="club-name">' + t.name + '</div></div><div class="club-city">📍 ' + t.city + '</div><a href="/team/' + t.id + '" class="profile-btn">TO THE PROFILE →</a></div>';
+            }).join('');
+
+            // Featured Players
+            document.getElementById('featured-players').innerHTML = featuredPlayers.map(function(p) {
+                var initials = p.name.split(' ').map(function(n) { return n[0]; }).join('');
+                return '<div class="featured-card" onclick="openModal(' + p.id + ')"><div class="featured-image">' + initials + '</div><div class="featured-info"><div class="featured-name">' + p.name + '</div><div class="featured-team">' + p.team + '</div><div class="featured-stats"><div class="goals-badge">' + p.goals + ' ⚽</div><div class="featured-position">' + p.position + '</div></div><button class="view-profile-btn">VIEW PROFILE →</button></div></div>';
+            }).join('');
+
+            // All Players
+            document.getElementById('all-players').innerHTML = players.map(function(p) {
+                return '<div class="player-card" onclick="openModal(' + p.id + ')"><div class="player-name">' + p.name + '</div><div class="player-team">' + getTeamName(p.team_id) + '</div><div class="player-position">' + p.position + '</div></div>';
+            }).join('');
+
+            // Standings
+            var standingsHTML = '';
+            standingsHTML += '<div class="standings-table"><div class="league-divider"><h2>🏆 PREMIER LEAGUE</h2></div><table><thead><tr style="background:#f97316;"><th>POS</th><th style="text-align:left;">TEAM</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>PTS</th></tr></thead><tbody>';
+            premierStandings.forEach(function(t) {
+                standingsHTML += '<tr><td style="text-align:center;">' + t.position + '</td><td><strong>' + t.team + '</strong></td><td style="text-align:center;">' + t.played + '</td><td style="text-align:center;">' + t.won + '</td><td style="text-align:center;">' + t.drawn + '</td><td style="text-align:center;">' + t.lost + '</td><td style="text-align:center;">' + t.gd + '</td><td style="text-align:center;color:#f97316;">' + t.points + '</td></tr>';
+            });
+            standingsHTML += '</tbody></table></div>';
+
+            // NSL Zone A
+            standingsHTML += '<div class="standings-table"><div class="league-divider"><h2>🌟 NSL - ZONE A</h2></div><table><thead><tr style="background:#f97316;"><th>POS</th><th style="text-align:left;">TEAM</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>PTS</th></tr></thead><tbody>';
+            nslStandings.zone_a.forEach(function(t) {
+                standingsHTML += '<tr><td style="text-align:center;">' + t.position + '</td><td><strong>' + t.team + '</strong></td><td style="text-align:center;">' + t.played + '</td><td style="text-align:center;">' + t.won + '</td><td style="text-align:center;">' + t.drawn + '</td><td style="text-align:center;">' + t.lost + '</td><td style="text-align:center;">' + t.gd + '</td><td style="text-align:center;color:#f97316;">' + t.points + '</td></tr>';
+            });
+            standingsHTML += '</tbody></table></div>';
+
+            // NSL Zone B
+            standingsHTML += '<div class="standings-table"><div class="league-divider"><h2>🌟 NSL - ZONE B</h2></div><table><thead><tr style="background:#f97316;"><th>POS</th><th style="text-align:left;">TEAM</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>PTS</th></tr></thead><tbody>';
+            nslStandings.zone_b.forEach(function(t) {
+                standingsHTML += '<tr><td style="text-align:center;">' + t.position + '</td><td><strong>' + t.team + '</strong></td><td style="text-align:center;">' + t.played + '</td><td style="text-align:center;">' + t.won + '</td><td style="text-align:center;">' + t.drawn + '</td><td style="text-align:center;">' + t.lost + '</td><td style="text-align:center;">' + t.gd + '</td><td style="text-align:center;color:#f97316;">' + t.points + '</td></tr>';
+            });
+            standingsHTML += '</tbody></table></div>';
+            standingsHTML += '<div style="text-align:center;color:#9ca3af;font-size:0.7rem;padding:20px;">📊 Standings as at 14th June 2026</div>';
+
+            document.getElementById('standings-container').innerHTML = standingsHTML;
+
+            await loadGPSData();
+            await loadComparisonPlayers();
+
+        } catch (e) {
+            console.error('Error loading data:', e);
+        }
+    }
+
+    loadAllData();
+    </script>
+</body>
+</html>

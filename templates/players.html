@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Player Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; padding: 40px; }
+        h1 { color: #f97316; }
+        a { color: #f97316; }
+        .card { background: #1f2937; padding: 20px; border-radius: 12px; margin: 20px 0; border: 1px solid #f97316; }
+        .stat { display: inline-block; margin: 10px 20px 10px 0; }
+        .stat-value { font-size: 1.5rem; color: #f97316; font-weight: bold; }
+        .stat-label { font-size: 0.8rem; color: #9ca3af; }
+    </style>
+</head>
+<body>
+    <a href="/">← Back to Home</a>
+    <h1>Player Profile</h1>
+    {% if player %}
+    <div class="card">
+        <h2 style="color: #f97316;">{{ player.name }}</h2>
+        <p><strong>Position:</strong> {{ player.position }}</p>
+        <p><strong>Team ID:</strong> {{ player.team_id }}</p>
+        <div style="margin-top: 20px;">
+            <div class="stat">
+                <div class="stat-value">{{ player.goals }}</div>
+                <div class="stat-label">GOALS</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">{{ player.assists }}</div>
+                <div class="stat-label">ASSISTS</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">{{ player.appearances }}</div>
+                <div class="stat-label">APPEARANCES</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">{{ player.player_rating }}</div>
+                <div class="stat-label">RATING</div>
+            </div>
+        </div>
+    </div>
+    {% if gps %}
+    <div class="card">
+        <h3>📍 GPS Data</h3>
+        <p>Distance: {{ gps.total_distance_km }}</p>
+        <p>Top Speed: {{ gps.max_speed_kmh }}</p>
+        <p>Vest: #{{ gps.vest_number }}</p>
+    </div>
+    {% endif %}
+    {% else %}
+    <div class="card">
+        <p>Player not found. Try <a href="/player/1">player 1</a> or <a href="/player/3">player 3</a>.</p>
+    </div>
+    {% endif %}
+</body>
+</html>

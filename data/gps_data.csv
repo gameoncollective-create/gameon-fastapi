@@ -1,0 +1,7 @@
+player_id,player_name,position,total_distance_km,max_speed_kmh,sprints,work_rate_percent,avg_heart_rate,status,vest_number
+7,Monica Nakamu,Forward,TBD,TBD,TBD,TBD,TBD,pending_vest,1
+8,Cynthia Atieno,Forward,TBD,TBD,TBD,TBD,TBD,pending_vest,2
+3,Vivian Shiyonzo Khayati,Midfielder,TBD,TBD,TBD,TBD,TBD,pending_vest,3
+4,Yvonne Kavere Idagiza,Defender,TBD,TBD,TBD,TBD,TBD,pending_vest,1
+1,Lucy Kisaga Agisa,Goalkeeper,TBD,TBD,TBD,TBD,TBD,pending_vest,2
+2,Wilfrida Ouko Seda,Goalkeeper,TBD,TBD,TBD,TBD,TBD,pending_vest,3
