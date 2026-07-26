@@ -1,4 +1,4 @@
-# app.py
+# main.py
 from fastapi import FastAPI, HTTPException, Depends, status, Form, Request
 from fastapi.responses import HTMLResponse, RedirectResponse, Response
 from fastapi.templating import Jinja2Templates 
