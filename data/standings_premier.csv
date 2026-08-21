@@ -1,13 +1,13 @@
-position,team,played,won,drawn,lost,gd,points
-1,Kenya Police Bullets,20,17,1,2,54,52
-2,Ulinzi Starlets,20,15,2,3,31,47
-3,Kibera Women Soccer Fc,20,10,4,6,5,34
-4,Trinity Starlets,20,10,4,6,5,34
-5,Vihiga Queens,20,9,6,5,3,33
-6,Kayole Starlets,20,9,1,10,-5,28
-7,Bungoma Queens Fc,20,7,4,9,-14,25
-8,Zetech Sparks,20,6,4,10,-14,22
-9,Gideon Starlets,20,4,3,13,-18,15
-10,Madira Soccer Assasins,20,4,5,11,-11,17
-11,Kisped Queens,11,1,1,9,-21,4
-12,Kisumu AllStarlets,11,0,1,10,-25,1
+position,team,played,won,drawn,lost,gf,ga,gd,points
+1,Bungoma Queens Fc,0,0,0,0,0,0,0,0
+2,Elim White Ladies,0,0,0,0,0,0,0,0
+3,Gideon Starlets,0,0,0,0,0,0,0,0
+4,Kayole Starlets,0,0,0,0,0,0,0,0
+5,Kibera Soccer Women FC,0,0,0,0,0,0,0,0
+6,Mathare United Women,0,0,0,0,0,0,0,0
+7,Police Bullets,0,0,0,0,0,0,0,0
+8,Shabana Starlets,0,0,0,0,0,0,0,0
+9,Trinity Starlets,0,0,0,0,0,0,0,0
+10,Ulinzi Starlets,0,0,0,0,0,0,0,0
+11,Vihiga Queens,0,0,0,0,0,0,0,0
+12,Zetech Sparks,0,0,0,0,0,0,0,0
