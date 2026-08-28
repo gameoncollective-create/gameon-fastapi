@@ -1,6 +1,6 @@
+
 # main.py
-from fastapi import FastAPI, HTTPException, Depends, status, Form, Request
-from fastapi.responses import HTMLResponse, RedirectResponse, Response
+from fastapi import FastAPI, HTTPException, Depends, status, Form, Request, Header
 from fastapi.templating import Jinja2Templates 
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm 
 from pydantic import BaseModel, EmailStr
@@ -22,7 +22,9 @@ load_dotenv()
 # ============================================
 # CONFIGURATION
 # ============================================
-SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key-change-this-in-production')
+SECRET_KEY = os.getenv('SECRET_KEY')
+if not SECRET_KEY:
+    raise RuntimeError("SECRET_KEY is not set. Add it in Render's Environment tab before starting the app.")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 PORT = int(os.getenv('PORT', 5002))
@@ -30,9 +32,20 @@ PORT = int(os.getenv('PORT', 5002))
 app = FastAPI(title="GameOn Collective API", version="1.0.0")
 
 # CORS
+ALLOWED_ORIGINS = [
+    "https://gameoncollective.com",
+    "https://www.gameoncollective.com",
+]
+
+ADMIN_KEY = os.getenv("ADMIN_KEY")
+
+def verify_admin(x_admin_key: Optional[str] = Header(None)):
+    if not ADMIN_KEY or x_admin_key != ADMIN_KEY:
+        raise HTTPException(status_code=403, detail="Not authorized")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -633,15 +646,13 @@ async def generate_api_key(data: APIKeyGenerate):
     }
 
 @app.get("/api/keys")
-async def list_keys():
-    return {"total_keys": len(api_keys), "keys": list(api_keys.keys())}
+async def list_keys(_: None = Depends(verify_admin)):
 
 # ============================================
 # ADMIN - EXPORT DATA
 # ============================================
 @app.get("/admin/export-players-csv")
-async def export_players_csv():
-    """Export all players as CSV file"""
+async def export_players_csv(_: None = Depends(verify_admin)):
     if not players:
         raise HTTPException(status_code=404, detail="No players data available")
     
