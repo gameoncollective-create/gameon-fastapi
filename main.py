@@ -647,7 +647,7 @@ async def generate_api_key(data: APIKeyGenerate):
 
 @app.get("/api/keys")
 async def list_keys(_: None = Depends(verify_admin)):
-
+  return {"total_keys": len(api_keys), "keys": list(api_keys.keys())}
 # ============================================
 # ADMIN - EXPORT DATA
 # ============================================
