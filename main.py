@@ -62,6 +62,8 @@ app.add_middleware(
 # Templates
 templates = Jinja2Templates(directory="templates")
 
+from fastapi.staticfiles import StaticFiles
+app.mount("/static", StaticFiles(directory="static"), name="static")
 # Password context
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
