@@ -1,6 +1,7 @@
 
 # main.py
 from fastapi import FastAPI, HTTPException, Depends, status, Form, Request, Header
+from fastapi.responses import HTMLResponse, RedirectResponse, Response
 from fastapi.templating import Jinja2Templates 
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm 
 from pydantic import BaseModel, EmailStr
