@@ -1,24 +1,24 @@
 id,name,city,league,logo
-1,Police Bullets,Nairobi,Premier,/static/Police Bullets_pl.jpg
-2,Ulinzi Starlets,Nairobi,Premier,/static/Ulinzi Starlets_pl.jpg
-3,Kibera Soccer Women FC,Nairobi,Premier,/static/Kibera Women Soccer FC.PNG
-4,Trinity Starlets,Nakuru,Premier,/static/Trinity Starlets_pl.jpg
-5,Vihiga Queens,Vihiga,Premier,/static/Vihiga Queens_pl.jpg
-6,Kayole Starlets,Nairobi,Premier,/static/kayole starlets fc_pl.jpg
-7,Bungoma Queens Fc,Bungoma,Premier,/static/Bungoma Queens fc.png
-8,Zetech Sparks,Mangu,Premier,/static/Zetech-Sparks-300x300.jpg
-9,Mathare United Women,Nairobi,Premier,
-10,Gideon Starlets,Homa Bay,Premier,/static/Gideon Starlets_pl.jpg
-11,Elim White Ladies,Kitale,Premier,
-12,Shabana Starlets,Kisii,Premier,
-13,Bandari Queens,Mombasa,NSL,/static/bandari queens fc_nsl.jpg
-14,Gor Mahia Queens,Nairobi,NSL,/static/Gor Mahia Fc_nsl.jpg
-15,AFC Leopardess,Nairobi,NSL,/static/afc leopardess fc _nsl.jpg
+1,Police Bullets,Nairobi,Premier,/static/police-bullets.jpg
+2,Ulinzi Starlets,Nairobi,Premier,/static/ulinzi-starlets.jpg
+3,Kibera Soccer Women FC,Nairobi,Premier,/static/kibera-soccer-women.jpg
+4,Trinity Starlets,Nakuru,Premier,/static/trinity-starlets.jpg
+5,Vihiga Queens,Vihiga,Premier,/static/vihiga-queens.jpg
+6,Kayole Starlets,Nairobi,Premier,/static/kayole-starlet.jpg
+7,Bungoma Queens Fc,Bungoma,Premier,/static/bungoma-queens.jpg
+8,Zetech Sparks,Mangu,Premier,/static/zetech-sparks.jpg
+9,Mathare United Women,Nairobi,Premier,/static/mathare-united.jpg
+10,Gideon Starlets,Homa Bay,Premier,/static/gideon-starlets.jpg
+11,Elim White Ladies,Kitale,Premier,/static/elim-white-ladies.jpg
+12,Shabana Starlets,Kisii,Premier,/static/shabana-starlets.jpg
+13,Bandari Queens,Mombasa,NSL,
+14,Gor Mahia Queens,Nairobi,NSL,
+15,AFC Leopardess,Nairobi,NSL
 16,Hildana Queens,Mwatate,NSL,
-17,Sunderland Samba,Nairobi,NSL,/static/sunderland samba fc.jpg
+17,Sunderland Samba,Nairobi,NSL,
 18,Gitothua FC,Ruiru,NSL,
-19,MTG United,Kilifi,NSL,/static/mtg grounds fc kilifi.jpg
+19,MTG United,Kilifi,NSL,
 20,TUK Ravens,Nairobi,NSL,
 21,Diani Queens,Diani,NSL,
 22,Barcelona Ladies SC,Nyahuru,NSL,
-23,Mombasa Olympic,Mombasa,NSL,/static/mombasa olympic ladies fc.jpg
+23,Mombasa Olympic,Mombasa,NSL,
