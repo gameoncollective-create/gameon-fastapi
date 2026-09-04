@@ -1,25 +1,25 @@
 id,name,city,league,logo
-1,Police Bullets,Nairobi,Premier,/static/Police Bullets _pl.jpg
-2,Ulinzi Starlets,Nairobi,Premier,/static/Ulinzi Starlets _pl.jpg
-3,Kibera Women Soccer Fc,Nairobi,Premier,/static/Kibera Women Soccer FC.PNG
-4,Trinity Starlets,Nakuru,Premier,/static/Trinity Starlets _pl.jpg
-5,Vihiga Queens,Vihiga,Premier,/static/Vihiga Queens _pl.jpg
-6,Kayole Starlets,Nairobi,Premier,/static/kayole starlets fc _pl.jpg
-7,Bungoma Queens Fc,Bungoma,Premier,/static/Bungoma Queens fc.png
-8,Zetech Sparks,Mangu,Premier,/static/Zetech-Sparks-300x300.jpg
-9,Madira Soccer Assasins,Vihiga,Premier,/static/Madira Soccer _pl.jpg
-10,Gideon Starlets,Homa Bay,Premier,/static/Gideon Starlets _pl.jpg
-11,Kisped Queens,Kisumu,Premier,/static/KISPED-Queens-300x300.jpg
-12,Kisumu AllStarlets,Kisumu,Premier,/static/Kisumu allstars _pl.jpg
-13,Mathare United,Nairobi,NSL,/static/mathere united fc-PL.jpg
-14,Bandari Queens,Mombasa,NSL,/static/bandari queens fc _nsl.jpg
-15,Gor Mahia Queens,Nairobi,NSL,/static/Gor Mahia Fc _nsl.jpg
-16,AFC Leopardess,Nairobi,NSL,/static/afc leopardess fc _nsl.jpg
-17,Hildana Queens,Mwatate,NSL,
-18,Sunderland Samba,Nairobi,NSL,/static/sunderland samba fc.jpg
-19,Gitothua FC,Ruiru,NSL,
-20,MTG United,Kilifi,NSL,/static/mtg grounds fc kilifi.jpg
-21,TUK Ravens,Nairobi,NSL,
-22,Diani Queens,Diani,NSL,
-23,Barcelona Ladies SC,Nyahuru,NSL,
-24,Mombasa Olympic,Mombasa,NSL,/static/mombasa olympic ladies fc.jpg
+1,Police Bullets,Nairobi,Premier,/static/police-bullets.jpg
+2,Ulinzi Starlets,Nairobi,Premier,/static/ulinzi-starlets.jpg
+3,Kibera Soccer Women FC,Nairobi,Premier,/static/kibera-soccer-women.jpg
+4,Trinity Starlets,Nakuru,Premier,/static/trinity-starlets.jpg
+5,Vihiga Queens,Vihiga,Premier,/static/vihiga-queens.jpg
+6,Kayole Starlets,Nairobi,Premier,/static/kayole-starlet.jpg
+7,Bungoma Queens Fc,Bungoma,Premier,/static/bungoma-queens.jpg
+8,Zetech Sparks,Mangu,Premier,/static/zetech-sparks.jpg
+9,Mathare United Women,Nairobi,Premier,/static/mathare-united.jpg
+10,Gideon Starlets,Homa Bay,Premier,/static/gideon-starlets.jpg
+11,Elim White Ladies,Kitale,Premier,/static/elim-white-ladies.jpg
+12,Shabana Starlets,Kisii,Premier,/static/shabana-starlets.jpg
+13,Bandari Queens,Mombasa,NSL,
+14,Gor Mahia Queens,Nairobi,NSL,
+15,AFC Leopardess,Nairobi,NSL
+16,Hildana Queens,Mwatate,NSL,
+17,Sunderland Samba,Nairobi,NSL,
+18,Gitothua FC,Ruiru,NSL,
+19,MTG United,Kilifi,NSL,
+20,TUK Ravens,Nairobi,NSL,
+21,Diani Queens,Diani,NSL,
+22,Barcelona Ladies SC,Nyahuru,NSL,
+23,Mombasa Olympic,Mombasa,NSL,
+
