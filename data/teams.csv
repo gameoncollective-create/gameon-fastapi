@@ -1,19 +1,19 @@
 id,name,city,league,logo
-1,Police Bullets,Nairobi,Premier,/static/Police Bullets_pl.jpg
-2,Ulinzi Starlets,Nairobi,Premier,/static/Ulinzi Starlets_pl.jpg
+1,Police Bullets,Nairobi,Premier,/static/Police Bullets _pl.jpg
+2,Ulinzi Starlets,Nairobi,Premier,/static/Ulinzi Starlets _pl.jpg
 3,Kibera Women Soccer Fc,Nairobi,Premier,/static/Kibera Women Soccer FC.PNG
-4,Trinity Starlets,Nakuru,Premier,/static/Trinity Starlets_pl.jpg
-5,Vihiga Queens,Vihiga,Premier,/static/Vihiga Queens_pl.jpg
-6,Kayole Starlets,Nairobi,Premier,/static/kayole starlets fc_pl.jpg
+4,Trinity Starlets,Nakuru,Premier,/static/Trinity Starlets _pl.jpg
+5,Vihiga Queens,Vihiga,Premier,/static/Vihiga Queens _pl.jpg
+6,Kayole Starlets,Nairobi,Premier,/static/kayole starlets fc _pl.jpg
 7,Bungoma Queens Fc,Bungoma,Premier,/static/Bungoma Queens fc.png
 8,Zetech Sparks,Mangu,Premier,/static/Zetech-Sparks-300x300.jpg
-9,Madira Soccer Assasins,Vihiga,Premier,/static/Madira Soccer_pl.jpg
-10,Gideon Starlets,Homa Bay,Premier,/static/Gideon Starlets_pl.jpg
-11,Kisped Queens,Kisumu,Premier,/static/KISPED-Queens-3.jpg
-12,Kisumu AllStarlets,Kisumu,Premier,/static/Kisumu allstars_pl.jpg
+9,Madira Soccer Assasins,Vihiga,Premier,/static/Madira Soccer _pl.jpg
+10,Gideon Starlets,Homa Bay,Premier,/static/Gideon Starlets _pl.jpg
+11,Kisped Queens,Kisumu,Premier,/static/KISPED-Queens-300x300.jpg
+12,Kisumu AllStarlets,Kisumu,Premier,/static/Kisumu allstars _pl.jpg
 13,Mathare United,Nairobi,NSL,/static/mathere united fc-PL.jpg
-14,Bandari Queens,Mombasa,NSL,/static/bandari queens fc_nsl.jpg
-15,Gor Mahia Queens,Nairobi,NSL,/static/Gor Mahia Fc_nsl.jpg
+14,Bandari Queens,Mombasa,NSL,/static/bandari queens fc _nsl.jpg
+15,Gor Mahia Queens,Nairobi,NSL,/static/Gor Mahia Fc _nsl.jpg
 16,AFC Leopardess,Nairobi,NSL,/static/afc leopardess fc _nsl.jpg
 17,Hildana Queens,Mwatate,NSL,
 18,Sunderland Samba,Nairobi,NSL,/static/sunderland samba fc.jpg
