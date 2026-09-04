@@ -1,25 +1,24 @@
-id,name,city,league,logo
-1,Police Bullets,Nairobi,Premier,/static/police-bullets.jpg
-2,Ulinzi Starlets,Nairobi,Premier,/static/ulinzi-starlets.jpg
-3,Kibera Soccer Women FC,Nairobi,Premier,/static/kibera-soccer-women.jpg
-4,Trinity Starlets,Nakuru,Premier,/static/trinity-starlets.jpg
-5,Vihiga Queens,Vihiga,Premier,/static/vihiga-queens.jpg
-6,Kayole Starlets,Nairobi,Premier,/static/kayole-starlet.jpg
-7,Bungoma Queens Fc,Bungoma,Premier,/static/bungoma-queens.jpg
-8,Zetech Sparks,Mangu,Premier,/static/zetech-sparks.jpg
-9,Mathare United Women,Nairobi,Premier,/static/mathare-united.jpg
-10,Gideon Starlets,Homa Bay,Premier,/static/gideon-starlets.jpg
-11,Elim White Ladies,Kitale,Premier,/static/elim-white-ladies.jpg
-12,Shabana Starlets,Kisii,Premier,/static/shabana-starlets.jpg
-13,Bandari Queens,Mombasa,NSL,
-14,Gor Mahia Queens,Nairobi,NSL,
-15,AFC Leopardess,Nairobi,NSL
-16,Hildana Queens,Mwatate,NSL,
-17,Sunderland Samba,Nairobi,NSL,
-18,Gitothua FC,Ruiru,NSL,
-19,MTG United,Kilifi,NSL,
-20,TUK Ravens,Nairobi,NSL,
-21,Diani Queens,Diani,NSL,
-22,Barcelona Ladies SC,Nyahuru,NSL,
-23,Mombasa Olympic,Mombasa,NSL,
-
+id,name,city,league,logo,founded_year,coach_name,description
+1,Police Bullets,Nairobi,Premier,/static/police-bullets.jpg,,"David Vijago","The Kenya Police Bullets are an elite professional women's football club based in Nairobi, Kenya, that competes in the top-tier Football Kenya Federation (FKF) Women Premier League. Affiliated with the Kenya National Police Service, the law enforcer side is one of the most successful and dominant women's teams in the country."
+2,Ulinzi Starlets,Nairobi,Premier,/static/ulinzi-starlets.jpg,2020,"Collins Ochieng","The women's football arm of the Kenya Defence Forces — three-time FKF Cup champions and one of the most feared sides in Kenyan women's football."
+3,Kibera Soccer Women FC,Nairobi,Premier,/static/kibera-soccer-women.jpg,2002,"George Bob Okallo","Kibera Soccer Women FC competes in the elite Kenya Women Premier League. The team serves as a powerful symbol of resilience and talent from the informal settlements, regularly challenging established clubs like Vihiga Queens and Kenya Police."
+4,Trinity Starlets,Nakuru,Premier,/static/trinity-starlets.jpg,,"Silvanus Wesonga","Trinity Starlets FC is based in the Kekopey area of Gilgil, Nakuru County. Sponsored by the Trinity Methodist Church, the team has quickly established itself as a highly competitive force in the league."
+5,Vihiga Queens,Vihiga,Premier,/static/vihiga-queens.jpg,,"","Vihiga Queens FC is a Kenyan professional women's association football club based in Mbale, Vihiga County that competes in Kenya's Women Premier League."
+6,Kayole Starlets,Nairobi,Premier,/static/kayole-starlet.jpg,2008,"Mary Adhiambo","Since its founding in 2008, Kayole Starlets FC has been a beacon of hope and transformation in Kayole and surrounding neighborhoods, fostering talent and empowering lives both on and off the pitch."
+7,Bungoma Queens Fc,Bungoma,Premier,/static/bungoma-queens.jpg,,"Godfrey Mabonga","Uplifting women soccer and talent."
+8,Zetech Sparks,Mangu,Premier,/static/zetech-sparks.jpg,,"Jackson Tumaini","Zetech Sparks FC is a ladies' football team from Zetech University currently playing in the Kenya Women Premier League."
+9,Mathare United Women,Nairobi,Premier,/static/mathare-united.jpg,,"Ann Aluoch","Mathare United Women is affiliated with the Mathare Youth Sports Association (MYSA) and won the FKF Women's Premier League title in 2011."
+10,Gideon Starlets,Homa Bay,Premier,/static/gideon-starlets.jpg,2021,"Silas Wesechere","Gideon's Starlets was created to nurture the talents of young girls in football. The club is based in western Kenya."
+11,Elim White Ladies,Kitale,Premier,/static/elim-white-ladies.jpg,,"",""
+12,Shabana Starlets,Kisii,Premier,/static/shabana-starlets.jpg,2023,"Peter Ogechi","Shabana Starlets is the women's side of Kisii-based Shabana FC. Coached by former Shabana men's midfielder Peter Ogechi, the club earned back-to-back promotions to reach the FKF Women's Premier League."
+13,Bandari Queens,Mombasa,NSL,,,"",""
+14,Gor Mahia Queens,Nairobi,NSL,,,"",""
+15,AFC Leopardess,Nairobi,NSL,,,"",""
+16,Hildana Queens,Mwatate,NSL,,,"",""
+17,Sunderland Samba,Nairobi,NSL,,,"",""
+18,Gitothua FC,Ruiru,NSL,,,"",""
+19,MTG United,Kilifi,NSL,,,"",""
+20,TUK Ravens,Nairobi,NSL,,,"",""
+21,Diani Queens,Diani,NSL,,,"",""
+22,Barcelona Ladies SC,Nyahuru,NSL,,,"",""
+23,Mombasa Olympic,Mombasa,NSL,,,"",""
