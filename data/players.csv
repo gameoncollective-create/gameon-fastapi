@@ -22,8 +22,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 21,Naomi Ongachi,Midfielder,premier,3,0,0,0,0
 22,Maximila Robi,Midfielder,premier,3,0,0,0,0
 23,Vivian Shiyonzo,Goalkeeper,premier,3,0,0,0,0
-24,Noel Amutata,Striker,premier,3,0,0,0,0
-24,Noel Amutata,Midfielder,premier,3,0,0,0,0
+24,Noel Amutata,Striker,premier,3,0,0,0,0 
 28,Pauline Kathuruh,Goalkeeper,premier,6,0,0,0,0
 29,Fidy Njoki,Defender,premier,6,0,0,0,0
 30,Lavyne Achola,Defender,premier,6,0,0,0,0
