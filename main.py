@@ -112,7 +112,7 @@ def load_csv(filename: str) -> List[Dict]:
                 for key, value in row.items():
                     if key in ['id', 'team_id', 'goals', 'assists', 'appearances', 
                                'played', 'won', 'drawn', 'lost', 'gd', 'points', 
-                               'gf', 'ga', 'position']:
+                               'gf', 'ga', ]:
                         try:
                             row[key] = int(value) if value else 0
                         except ValueError:
