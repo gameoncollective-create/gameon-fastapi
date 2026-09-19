@@ -23,23 +23,6 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 22,Maximila Robi,Midfielder,premier,3,0,0,0,0
 23,Vivian Shiyonzo,Goalkeeper,premier,3,0,0,0,0
 24,Noel Amutata,Striker,premier,3,0,0,0,0
-28,Pauline Kathuruh,Goalkeeper,premier,6,0,0,0,0
-29,Fidy Njoki,Defender,premier,6,0,0,0,0
-30,Lavyne Achola,Defender,premier,6,0,0,0,0
-31,Foscah Kanenge,Defender,premier,6,0,0,0,0
-32,Hellen Ochieng,Defender,premier,6,0,0,0,0
-33,Mercy Manguro,Midfielder,premier,6,0,0,0,0
-34,Eunice Wabwoba,Midfielder,premier,6,0,0,0,0
-35,Drailer Salome,Midfielder,premier,6,0,0,0,0
-36,Nuru Hadima,Midfielder,premier,6,0,0,0,0
-37,Euphrasier Shilwatso,Midfielder,premier,6,0,0,0,0
-38,Magneta Ocharo,Forward,premier,6,0,0,0,0
-39,Lindah Kihara,Forward,premier,6,8,1,20,7.5
-40,Valerian Nabwire Echakut,Forward,premier,6,0,0,0,0
-41,Praxidies Shivikhwa,Forward,premier,6,0,0,0,0
-42,Fridah Parloma,Forward,premier,6,0,0,0,0
-43,Faith Naliaka,Forward,premier,6,0,0,0,0
-44,Esther Ngugi,Forward,premier,6,0,0,0,0
 45,Velma Auma,Goalkeeper,premier,2,0,0,0,0
 46,Judith Osimno,Goalkeeper,premier,2,0,0,0,0
 47,Maureen Shimulu,Goalkeeper,premier,2,0,0,0,0
