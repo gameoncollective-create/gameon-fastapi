@@ -1,13 +1,14 @@
 position,team,played,won,drawn,lost,gf,ga,gd,points
-1,Bungoma Queens Fc,0,0,0,0,0,0,0,0
-2,Elim White Ladies,0,0,0,0,0,0,0,0
-3,Gideon Starlets,0,0,0,0,0,0,0,0
-4,Kayole Starlets,0,0,0,0,0,0,0,0
-5,Kibera Soccer Women FC,0,0,0,0,0,0,0,0
-6,Mathare United Women,0,0,0,0,0,0,0,0
+position,team,played,won,drawn,lost,gf,ga,gd,points
+1,Mathare United Women,1,1,0,0,3,1,2,3
+2,Ulinzi Starlets,1,1,0,0,2,0,2,3
+3,Bungoma Queens Fc,0,0,0,0,0,0,0,0
+4,Elim White Ladies,0,0,0,0,0,0,0,0
+5,Kayole Starlets,0,0,0,0,0,0,0,0
+6,Kibera Soccer Women FC,0,0,0,0,0,0,0,0
 7,Police Bullets,0,0,0,0,0,0,0,0
 8,Shabana Starlets,0,0,0,0,0,0,0,0
 9,Trinity Starlets,0,0,0,0,0,0,0,0
-10,Ulinzi Starlets,0,0,0,0,0,0,0,0
-11,Vihiga Queens,0,0,0,0,0,0,0,0
-12,Zetech Sparks,0,0,0,0,0,0,0,0
+10,Zetech Sparks,0,0,0,0,0,0,0,0
+11,Vihiga Queens,1,0,0,1,1,3,-2,0
+12,Gideon Starlets,1,0,0,1,0,2,-2,0
