@@ -179,25 +179,17 @@ gps_data = load_csv('data/gps_data.csv')
 if not gps_data:
     print("⚠️ No GPS data found, using defaults")
     gps_data = [
-        {"player_id": 7, "player_name": "Monica Nakamu", "position": "Forward", "vest_number": 1,
-         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD", 
-         "work_rate_percent": "TBD", "avg_heart_rate": "TBD", "status": "pending_vest"},
-        {"player_id": 8, "player_name": "Cynthia Atieno", "position": "Forward", "vest_number": 2,
-         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD", 
-         "work_rate_percent": "TBD", "avg_heart_rate": "TBD", "status": "pending_vest"},
-        {"player_id": 3, "player_name": "Vivian Shiyonzo Khayati", "position": "Midfielder", "vest_number": 3,
-         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD", 
-         "work_rate_percent": "TBD", "avg_heart_rate": "TBD", "status": "pending_vest"},
-        {"player_id": 4, "player_name": "Yvonne Kavere Idagiza", "position": "Defender", "vest_number": 1,
-         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD", 
-         "work_rate_percent": "TBD", "avg_heart_rate": "TBD", "status": "pending_vest"},
-        {"player_id": 1, "player_name": "Lucy Kisaga Agisa", "position": "Goalkeeper", "vest_number": 2,
-         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD", 
-         "work_rate_percent": "TBD", "avg_heart_rate": "TBD", "status": "pending_vest"},
-        {"player_id": 2, "player_name": "Wilfrida Ouko Seda", "position": "Goalkeeper", "vest_number": 3,
-         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD", 
-         "work_rate_percent": "TBD", "avg_heart_rate": "TBD", "status": "pending_vest"}
+        {"player_id": 84, "player_name": "Marline Atieno", "position": "Defender", "vest_number": 1,
+         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD",
+         "accelerations": "TBD", "decelerations": "TBD", "work_rate_percent": "TBD", "status": "pending_vest"},
+        {"player_id": 77, "player_name": "Veronicah Nyambura", "position": "Defender", "vest_number": 2,
+         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD",
+         "accelerations": "TBD", "decelerations": "TBD", "work_rate_percent": "TBD", "status": "pending_vest"},
+        {"player_id": 99, "player_name": "Iddah Adhiambo", "position": "Forward", "vest_number": 3,
+         "total_distance_km": "TBD", "max_speed_kmh": "TBD", "sprints": "TBD",
+         "accelerations": "TBD", "decelerations": "TBD", "work_rate_percent": "TBD", "status": "pending_vest"}
     ]
+    
 
 gps_sessions = [
     {
