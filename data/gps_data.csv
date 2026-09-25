@@ -1,4 +1,4 @@
 player_id,player_name,position,total_distance_km,max_speed_kmh,sprints,accelerations,decelerations,work_rate_percent,status,vest_number
-84,Marline Atieno,Defender,TBD,TBD,TBD,TBD,TBD,TBD,pending_vest,1
-77,Veronicah Nyambura,Defender,TBD,TBD,TBD,TBD,TBD,TBD,pending_vest,2
-99,Iddah Adhiambo,Forward,TBD,TBD,TBD,TBD,TBD,TBD,pending_vest,3
+84,Marline Atieno,Defender,TBD,TBD,TBD,TBD,TBD,TBD,active,1
+77,Veronicah Nyambura,Defender,TBD,TBD,TBD,TBD,TBD,TBD,active,2
+99,Iddah Adhiambo,Forward,TBD,TBD,TBD,TBD,TBD,TBD,active,3
