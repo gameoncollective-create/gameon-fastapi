@@ -148,7 +148,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 167,Grace Okumu,Midfielder,premier,6,0,0,0,0
 168,Elizabeth Okello,Midfielder,premier,6,0,0,0,0
 169,Shaneez Nyambura,Midfielder,premier,6,0,0,0,0
-170,Rebecca Odato,Midfielder,premier,6,0,0,0,0
+170,Rebecca Odato,Midfielder,premier,6,0,1,3,0
 171,Shani Shemaiah,Midfielder,premier,6,0,0,0,0
 172,Nayoma Adianca,Midfielder,premier,6,0,0,0,0
 173,Naomi Masinde,Midfielder,premier,6,0,0,0,0
@@ -211,14 +211,14 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 230,Emily Morang'a,,premier,1,0,0,0,0
 231,Ochiel Lilian,Goalkeeper,premier,4,0,0,0,0
 232,Mboone Agnes,,premier,4,0,0,0,0
-233,Ayako Ferbish,,premier,4,0,0,0,0
+233,Ayako Ferbish,,premier,4,0,1,3,0
 234,Njeri Shalen,,premier,4,0,0,0,0
 235,Kamwiliwa Mercy,,premier,4,0,0,0,0
 236,Anyango Mercy,,premier,4,0,0,0,0
 237,Mugoto Charity,,premier,4,0,0,0,0
 238,Muteshi Elizabeth,,premier,4,0,0,0,0
 239,Otieno Phoebe,,premier,4,0,0,0,0
-240,Bakari Anifa,,premier,4,0,0,0,0
+240,Bakari Anifa,,premier,4,1,0,3,0
 241,Wanjala Emily,,premier,4,0,0,0,0
 242,Kalara Pauline,,premier,4,0,0,0,0
 243,Kitunguli Beryl,,premier,4,0,0,0,0
