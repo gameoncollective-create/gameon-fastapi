@@ -164,8 +164,27 @@ division_one_zone_b = load_csv('data/division_one_zone_b.csv')
 # Load players
 players = load_csv('data/players.csv')
 
-# Load featured players
-featured_players = load_csv('data/featured_players.csv')
+def compute_featured_players(n=4):
+    """Pick the top N players to feature as 'Players to Watch', ranked by
+    goals then assists. This replaces the old hand-maintained
+    featured_players.csv, which had no team_id/appearances fields (so the
+    frontend showed 'UNATTACHED' and 0s) and kept drifting out of sync
+    with the real stats in players.csv."""
+    def sort_key(p):
+        try:
+            goals = int(p.get('goals') or 0)
+        except ValueError:
+            goals = 0
+        try:
+            assists = int(p.get('assists') or 0)
+        except ValueError:
+            assists = 0
+        return (goals, assists)
+    return sorted(players, key=sort_key, reverse=True)[:n]
+
+# Featured players are computed from players.csv (see compute_featured_players
+# above) instead of being read from a separate, manually-maintained CSV.
+featured_players = compute_featured_players()
 
 # Load standings
 premier_standings = load_csv('data/standings_premier.csv')
