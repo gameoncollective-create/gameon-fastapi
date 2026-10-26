@@ -6,7 +6,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 5,Ruth Chebungei,Striker,premier,3,0,0,0,0
 6,Diana Cherono,Striker,premier,3,0,0,0,0
 7,Mildred Kanyisi,Midfielder,premier,3,0,0,0,0
-8,Yvonne Kavere,Midfielder,premier,3,0,0,0,0
+8,Yvonne Kavere,Midfielder,premier,3,0,1,1,0
 9,Lucy Agisa Kisaga,Goalkeeper,premier,3,0,0,0,0
 10,Fanis Kwamboka,Defender,premier,3,0,0,0,0
 11,Mary Majeso,Defender,premier,3,0,0,0,0
@@ -22,7 +22,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 21,Naomi Ongachi,Midfielder,premier,3,0,0,0,0
 22,Maximila Robi,Midfielder,premier,3,0,0,0,0
 23,Vivian Shiyonzo,Goalkeeper,premier,3,0,0,0,0
-24,Noel Amutata,Striker,premier,3,2,0,2,0
+24,Noel Amutata,Striker,premier,3,3,0,3,0
 45,Velma Auma,Goalkeeper,premier,2,0,0,0,0
 46,Judith Osimno,Goalkeeper,premier,2,0,0,0,0
 47,Maureen Shimuli,Goalkeeper,premier,2,0,0,0,0
@@ -134,7 +134,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 153,Cynthia Nekesa,Striker,premier,7,0,0,0,0
 154,Dolphina Barasa,Striker,premier,7,0,0,0,0
 155,Hanifa Mashasha,Striker,premier,7,0,0,0,0
-156,Lilian Nechesa,Striker,premier,7,2,0,3,0
+156,Lilian Nechesa,Striker,premier,7,3,0,4,0
 157,Ruth Waswa,Striker,premier,7,0,0,0,0
 158,Nelly Achieng',Goalkeeper,premier,6,0,0,0,0
 159,Sonia Wambui,Goalkeeper,premier,6,0,0,0,0
@@ -151,12 +151,12 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 170,Rebecca Odato,Midfielder,premier,6,0,1,3,0
 171,Shani Shemaiah,Midfielder,premier,6,0,0,0,0
 172,Nayoma Adianca,Midfielder,premier,6,0,0,0,0
-173,Naomi Masinde,Midfielder,premier,6,0,0,0,0
+173,Naomi Masinde,Midfielder,premier,6,1,0,1,0
 174,Esther Ngugi,Midfielder,premier,6,0,0,0,0
-175,Eunice Nabwoba,Midfielder,premier,6,1,0,3,0
-176,Magneta Ocharo,Forward,premier,6,1,1,2,0
+175,Eunice Nabwoba,Midfielder,premier,6,1,1,4,0
+176,Magneta Ocharo,Forward,premier,6,2,1,3,0
 177,Calta Nasambu,Forward,premier,6,0,1,2,0
-178,Charity Wanjala,Forward,premier,6,1,0,1,0
+178,Charity Wanjala,Forward,premier,6,1,1,2,0
 179,Anney Matinde,Forward,premier,6,0,0,0,0
 180,Ivy Biwott,Forward,premier,6,0,0,0,0
 181,Jane Njeri,Forward,premier,6,0,0,0,0
@@ -168,7 +168,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 187,Celestine Aludo,,premier,8,0,0,0,0
 188,Litron Kimuli,,premier,8,0,0,0,0
 189,Mercyline Sakwa,,premier,8,0,0,0,0
-190,Fridhaus Abdalla,,premier,8,0,0,0,0
+190,Fridhaus Abdalla,,premier,8,1,0,1,0
 191,Sarah Chalovu,,premier,8,0,0,0,0
 192,Lindah Okoside,,premier,8,0,0,0,0
 193,Hildah Wanjiku,,premier,8,1,0,3,0
@@ -197,13 +197,13 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 216,Sandra Kisakye,,premier,1,0,0,0,0
 217,Hadija Nandago,,premier,1,0,0,0,0
 218,Halima Imbachi,,premier,1,0,0,0,0
-219,Lydia Akoth,,premier,1,0,0,0,0
+219,Lydia Akoth,,premier,1,1,0,1,0
 220,Cynthia Atieno,,premier,1,0,0,0,0
 221,Medina Abubakar,,premier,1,0,0,0,0
-222,Lorna Nyarinda,Defender,premier,1,2,0,3,0
+222,Lorna Nyarinda,Defender,premier,1,3,0,4,0
 223,Martha Amunyolet,,premier,1,0,0,0,0
 224,Tereza Engesha,Forward,premier,1,2,0,2,0
-225,Airin Madalina,,premier,1,0,0,0,0
+225,Airin Madalina,,premier,1,2,0,1,0
 226,Eglay Mukwana,,premier,1,0,0,0,0
 227,Lucy Kwekwe,,premier,1,0,0,0,0
 228,Rebecca Okwaro,,premier,1,1,0,3,0
@@ -238,7 +238,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 257,Christine Mong'ina Machuka,,premier,12,0,0,0,0
 258,Mmbohi,,premier,12,0,0,0,0
 259,Christine Ondieki,,premier,12,0,0,0,0
-260,Eleen Wanjala,,premier,12,0,0,0,0
+260,Eleen Wanjala,,premier,12,1,0,1,0
 261,Damaris Ondieki,Goalkeeper,premier,12,0,0,0,0
 262,Majorine Rael,,premier,12,0,0,0,0
 263,Vivian Nancy Ouma,,premier,12,0,0,0,0
@@ -303,3 +303,5 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 322,Phiona Awino Ariko,Goalkeeper,premier,2,0,0,0,0
 323,Tabitha Amoit Barasa,,premier,2,0,0,0,0
 324,Velma Abwire,Goalkeeper,premier,2,0,0,0,0
+325,Lonah Kwamboka,,premier,4,3,0,1,0
+326,Joy Christine,,premier,3,1,0,1,0
