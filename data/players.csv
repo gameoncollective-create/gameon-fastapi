@@ -1,6 +1,6 @@
 id,name,position,league,team_id,goals,assists,appearances,player_rating
 1,Christine Adhiambo,Defender,premier,3,0,0,0,0
-2,Anna Nabwire Arusi,Striker,premier,3,3,0,4,0
+2,Anna Nabwire Arusi,Striker,premier,3,4,0,5,0
 3,Christine Atieno,Midfielder,premier,3,0,0,0,0
 4,Pauline Atieno,Defender,premier,3,0,0,0,0
 5,Ruth Chebungei,Striker,premier,3,0,0,0,0
@@ -40,11 +40,11 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 59,Linda Okoside,Midfielder,premier,2,1,0,3,0
 60,Lucy Nato,Midfielder,premier,2,0,0,0,0
 61,Sylvia Mukai,Midfielder,premier,2,0,0,0,0
-62,Beverline Adika,Midfielder,premier,2,0,1,1,0
-63,Mercy Airo,Forward,premier,2,0,0,0,0
+62,Beverline Adika,Midfielder,premier,2,2,1,2,0
+63,Mercy Airo,Forward,premier,2,3,0,1,0
 64,Elizabeth Mideva,Striker,premier,2,0,0,0,0
 65,Sharline Nambengele,Forward,premier,2,3,0,4,0
-66,Siliya Rasoha,Forward,premier,2,1,0,1,0
+66,Siliya Rasoha,Forward,premier,2,3,1,3,0
 67,Quinter Adhiambo,Forward,premier,3,0,0,3,0
 68,Margaret Muchera,Forward,premier,2,0,0,0,0
 69,Valentine Khwaka,Goalkeeper,premier,9,0,0,0,0
@@ -234,10 +234,10 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 253,Sylvia Ondiba,,premier,12,1,0,3,0
 254,Hellen Ochieng',,premier,12,0,0,0,0
 255,Njeri,,premier,12,0,0,0,0
-256,Purity Akinyi,,premier,12,0,0,0,0
-257,Christine Mong'ina Machuka,,premier,12,0,0,0,0
+256,Purity Akinyi,,premier,12,0,1,1,0
+257,Christine Mong'ina Machuka,,premier,12,2,0,1,0
 258,Mmbohi,,premier,12,0,0,0,0
-259,Christine Ondieki,,premier,12,0,0,0,0
+259,Christine Ondieki,,premier,12,0,1,1,0
 260,Eleen Wanjala,,premier,12,2,0,2,0
 261,Damaris Ondieki,Goalkeeper,premier,12,0,0,0,0
 262,Majorine Rael,,premier,12,0,0,0,0
@@ -257,7 +257,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating
 276,Amina Amos,,premier,5,0,0,0,0
 277,Mejja Martha,,premier,5,0,0,0,0
 278,Wavinya Anne,,premier,5,0,0,0,0
-279,Josephine Werenga,,premier,5,3,0,2,0
+279,Josephine Werenga,,premier,5,4,0,3,0
 280,Moraa Ann,,premier,5,0,0,0,0
 281,Esther Musimbi,,premier,5,0,0,0,0
 282,Anyoso Eldah,,premier,5,0,0,0,0
