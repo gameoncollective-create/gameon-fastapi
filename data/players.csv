@@ -218,7 +218,7 @@ id,name,position,league,team_id,goals,assists,appearances,player_rating,photo
 237,Mugoto Charity,,premier,4,1,0,1,0,
 238,Muteshi Elizabeth,,premier,4,0,0,0,0,
 239,Otieno Phoebe,,premier,4,0,0,0,0,
-240,Bakari Anifa,,premier,4,4,0,4,0,
+240,Bakari Anifa,,premier,4,4,0,4,0,/static/players/bakari-anifa.jpg
 241,Wanjala Emily,,premier,4,0,0,0,0,
 242,Kalara Pauline,,premier,4,0,0,0,0,
 243,Kitunguli Beryl,,premier,4,0,0,0,0,
